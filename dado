@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+ int dado(int i)//função
+ {
+ 	     //int i;
+ 
+     printf("Gerando 10 valores aleatorios:\n\n");
+ 
+     for (i = 0; i < 6; i++)
+     {
+           /* gerando valores aleatórios entre zero e 100 */
+           printf("%d ", rand() % 6);
+     }
+return dado;
+ }
+
+int main()
+{
+  int resp;
+  int i;
+  resp= dado(i);
+  
+   printf("%d", resp);
+
+
+system("pause>NULL");
+return 0;
+}
