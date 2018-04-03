@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+void ler(void)
+{
+   int i, num[3];
+
+   for(i=0; i < 3; i++)
+   {
+      printf("Digite numero %d: ",i+1);
+      scanf("%d",&num[i]);
+   }
+
+   printf("\nMaior valor =%d\n",maior(num, 3));
+}
+
+
+int maior(int *num, int nm)
+{
+   int i, maior = 0;
+   
+   for(i=0; i < nm; i++)
+   {
+      if (num[i] > maior)
+         maior = num[i];
+   }
+
+   return maior;
+}
+
+
+int main(){
+   ler();
+   return 0;
+}
